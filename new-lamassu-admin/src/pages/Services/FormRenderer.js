@@ -42,6 +42,7 @@ const FormRenderer = ({
   const values = R.merge(initialValues, value)
 
   const saveNonEmptySecret = it => {
+    console.log(it, 'asd')
     const emptySecretFields = R.compose(
       R.map(R.prop('code')),
       R.filter(

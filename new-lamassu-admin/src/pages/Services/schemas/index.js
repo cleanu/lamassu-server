@@ -1,3 +1,4 @@
+import bitfinex from './bitfinex'
 import bitgo from './bitgo'
 import bitstamp from './bitstamp'
 import blockcypher from './blockcypher'
@@ -8,6 +9,7 @@ import mailgun from './mailgun'
 import twilio from './twilio'
 
 export default {
+  [bitfinex.code]: bitfinex,
   [bitgo.code]: bitgo,
   [bitstamp.code]: bitstamp,
   [blockcypher.code]: blockcypher,
